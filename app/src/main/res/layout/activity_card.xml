@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue2"
+    android:background="@drawable/border_round_white"
+    android:padding="10dp"
     >
 
 
@@ -13,7 +14,6 @@
         android:layout_height="300dp"
         android:layout_marginTop="5dp"
         android:hint="@string/numero_de_telefone"
-        android:background="@drawable/calca"
         android:inputType="number"
         android:singleLine="true"
         android:layout_centerHorizontal="true"
@@ -27,7 +27,6 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_below="@+id/ivImage"
-        android:background="@color/blue1"
 
         >
         <TextView

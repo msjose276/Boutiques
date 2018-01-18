@@ -1,5 +1,6 @@
 package com.example.mateusjose.boutiques;
 
+import android.graphics.Bitmap;
 import android.media.Image;
 import android.provider.ContactsContract;
 
@@ -15,7 +16,7 @@ public class Item {
     private String boutique;
     private String address;
     private String price;
-    private List<Image> images;
+    private List<Bitmap> images;
 
     public Item(){
         boutique="";
@@ -24,7 +25,7 @@ public class Item {
         images=new ArrayList<>();
     }
 
-    public Item(String Boutique, String Address, String Price, List<Image> List_images){
+    public Item(String Boutique, String Address, String Price, List<Bitmap> List_images){
         boutique=Boutique;
         address=Address;
         price=Price;
@@ -59,11 +60,11 @@ public class Item {
     public void setAddress(String address) {
         this.address = address;
     }
-    public List<Image> getImages() {
+    public List<Bitmap> getImages() {
         return images;
     }
 
-    public void setImages(List<Image> images) {
+    public void setImages(List<Bitmap> images) {
         this.images = images;
     }
 

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -36,11 +37,12 @@ public class CardAdaptor extends ArrayAdapter<Item> {
         TextView Price =(TextView) convertView.findViewById(R.id.tvPrice);
         TextView Location =(TextView) convertView.findViewById(R.id.tvBoutique);
         TextView Boutique =(TextView) convertView.findViewById(R.id.tvLocation);
-        //TextView Image =(TextView) convertView.findViewById(R.id.ivImage);
+        ImageView Image =(ImageView) convertView.findViewById(R.id.ivImage);
 
         Price.setText(listCard.get(position).getPrice());
         Location.setText("Sao Paulo");
         //Boutique.setText(listCard.get(position).toString());
+        Image.setImageBitmap(listCard.get(position).getImages().get(0));
 
         return convertView;
     }

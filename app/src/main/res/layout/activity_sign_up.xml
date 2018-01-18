@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mateusjose.boutiques.LoginActivity"
+    android:background="@color/blue1"
+    >
+
+    <ImageView
+        android:id="@+id/evLogotipo"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:hint="@string/numero_de_telefone"
+        android:padding="10dp"
+        android:background="@drawable/logotipo"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:hint="nome completo"
+        android:background="@drawable/border_round_white"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/evLogotipo"
+        />
+
+    <EditText
+        android:id="@+id/etCellPhone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/numero_de_telefone"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/border_round_white"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etFullName"
+        />
+
+    <EditText
+        android:id="@+id/etBirthday"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="data de nascimento"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/border_round_white"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etCellPhone"
+        />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/enter_password"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/border_round_white"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etBirthday"
+        />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="Confirmar Palavra-Passe"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/border_round_white"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etPassword"
+        />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="@string/sign_up"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etConfirmPassword"
+        android:textColor="@color/white"
+        android:background="@drawable/border_round_white"
+        android:onClick="SignUp"
+
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/login"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvSignup"
+        android:onClick="Login"
+        />
+
+
+    <TextView
+        android:id="@+id/tvAngoApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="AngoApp"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvSignup"
+        />
+
+
+
+</RelativeLayout>

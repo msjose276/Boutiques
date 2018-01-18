@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
 
 
     <RelativeLayout
         android:id="@+id/rlSearch"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/blue1"
+        android:background="@color/blue2"
         android:layout_marginTop="0dp"
         >
         <EditText
+            android:id="@+id/etSearch"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
             android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:background="@color/white"
+            android:layout_height="40dp"
+            android:background="@drawable/border_rounded_blue1"
             android:hint="@string/procurar_acessorios"
             />
     </RelativeLayout>
@@ -25,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/rlSearch"
+        android:padding="10dp"
         >
 
 

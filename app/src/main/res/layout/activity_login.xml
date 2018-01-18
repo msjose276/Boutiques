@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mateusjose.boutiques.LoginActivity"
+    android:background="@color/blue1"
+
+    >
+
+    <ImageView
+        android:id="@+id/evLogotipo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:hint="@string/numero_de_telefone"
+        android:padding="10dp"
+        android:background="@drawable/logotipo"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+
+        android:id="@+id/etNumeroTelefone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/numero_de_telefone"
+        android:padding="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/border_round_white"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/evLogotipo"
+        />
+
+    <EditText
+        android:id="@+id/etPalavraPasse"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/enter_password"
+        android:padding="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/border_round_white"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etNumeroTelefone"
+        />
+
+    <TextView
+        android:id="@+id/tvEsqueceuPalavraPasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:hint="@string/esqueceu_palavra_passe"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etPalavraPasse"
+        android:onClick="ForgotPassword"
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tvLogin"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:hint="@string/login"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvEsqueceuPalavraPasse"
+        android:textColor="@color/black"
+        android:background="@drawable/border_round_white"
+        android:onClick="Login"
+        />
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:hint="@string/sign_up"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvLogin"
+        android:textColor="@color/white"
+        android:onClick="SignUp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvAngoApp"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:hint="AngoApp"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvSignup"
+        android:textColor="@color/white"
+        />
+
+
+
+</RelativeLayout>
