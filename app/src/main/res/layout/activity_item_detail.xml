@@ -1,11 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mateusjose.boutiques.ItemDetailActivity">
+    tools:context="com.example.mateusjose.boutiques.ItemDetailActivity"
+    android:background="@color/blue1"
+    >
 
 
+    <RelativeLayout
+        android:id="@+id/rlDetail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue2"
+        android:layout_marginTop="0dp"
+        >
+        <ImageView
+            android:id="@+id/ivlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/border_rounded_blue1"
+            android:hint="@string/procurar_acessorios"
+            />
+        <TextView
 
-</android.support.design.widget.CoordinatorLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llImages"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/rlDetail"
+        android:orientation="horizontal"
+        android:background="@drawable/border_round_white"
+        >
+
+        <ImageView
+            android:layout_marginTop="130dp"
+            android:id="@+id/ivback"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:background="@drawable/border_round_white"
+            android:onClick="Back"
+
+            />
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:src="@drawable/calca"
+
+            />
+
+        <ImageView
+            android:layout_marginTop="130dp"
+            android:id="@+id/ivfront"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:background="@drawable/border_round_white"
+            android:onClick="Front"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="preco: 4,500kz"
+        android:layout_below="@+id/llImages"
+        />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="localizacao: rocha pinto"
+        android:layout_below="@+id/tvPrice"
+
+        />
+
+    <TextView
+        android:id="@+id/tvBoutique"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="boutique: maniquim"
+        android:layout_below="@+id/tvAddress"
+
+        />
+    <TextView
+        android:id="@+id/tvOpenTime"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="horario de atendimento: 8h-17h"
+        android:layout_below="@+id/tvBoutique"
+
+        />
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="avaliacao: 4 estrelas"
+        android:layout_below="@+id/tvOpenTime"
+
+        />
+</RelativeLayout>

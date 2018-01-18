@@ -1,5 +1,6 @@
 package com.example.mateusjose.boutiques;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -56,6 +58,16 @@ public class FragTabCalcas extends android.support.v4.app.Fragment {
 
             }
 
+        });
+
+        //mateus: set onclick listner for the list of items
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(getContext(), ItemDetailActivity.class);
+                startActivity(intent);
+            }
         });
 
 
