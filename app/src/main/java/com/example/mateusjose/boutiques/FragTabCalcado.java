@@ -33,8 +33,7 @@ public class FragTabCalcado extends android.support.v4.app.Fragment {
         editText.setHint(R.string.procurar_calcados);
         final List<Item> items=new ArrayList<>();
         final ListView listView = (ListView) page.findViewById(R.id.lvItem);
-
-
+        
         //Mateus: create a list of images
         List<Bitmap> List_images = new ArrayList<>();
         //Mateus: add images into the list
@@ -80,12 +79,9 @@ public class FragTabCalcado extends android.support.v4.app.Fragment {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
                 String searchingWord = editText.getText().toString();
 
-
                 List<Item> searchItems = new ArrayList<>();
-
                 if (searchingWord.equalsIgnoreCase("")) {
 
                     CardAdaptor adaptor = new CardAdaptor(getContext(), items);
@@ -113,13 +109,10 @@ public class FragTabCalcado extends android.support.v4.app.Fragment {
                     CardAdaptor adaptor = new CardAdaptor(getContext(), searchItems);
                     listView.setAdapter(adaptor);
                     adaptor.notifyDataSetChanged();
-
                 }
             }
-
             @Override
             public void afterTextChanged(Editable editable) {
-
             }
         });
 

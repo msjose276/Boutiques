@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mateusjose.boutiques.SplashActivity"
+    android:background="@color/blue1"
+    >
+
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="120dp"
+        >
+
+    <TextView
+        android:id="@+id/white1"
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="0dp"
+
+        />
+    <TextView
+        android:id="@+id/black1"
+        android:layout_below="@+id/white1"
+
+        android:layout_width="140dp"
+        android:layout_height="10dp"
+        android:background="@color/black"
+        android:layout_marginTop="30dp"
+
+        />
+    <TextView
+        android:id="@+id/white2"
+        android:layout_below="@+id/black1"
+
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+
+        />
+    <TextView
+        android:id="@+id/black2"
+        android:layout_below="@+id/white2"
+
+        android:layout_width="140dp"
+        android:layout_height="10dp"
+        android:background="@color/black"
+        android:layout_marginTop="30dp"
+
+        />
+    <TextView
+        android:id="@+id/white3"
+        android:layout_below="@+id/black2"
+
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+
+        />
+    </RelativeLayout>
+</RelativeLayout>
